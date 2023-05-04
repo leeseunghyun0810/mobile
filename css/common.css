@@ -4,7 +4,7 @@
 
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined'); /* font-family: 'Material Icons Outlined'; */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); /* font-family: fontawesome; */
-@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); /* font-family: xeicon;  */
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); /* font-family: xeicon;  */
 
 *{  /* 전체선택자(모든 태그에 여백을 빼줌 */
   margin: 0;
