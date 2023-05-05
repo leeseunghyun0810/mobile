@@ -16,7 +16,7 @@
         <h1 class="logo"><a href="index.html"><img src="images/logo.gif" alt="LOGO"></a></h1>
         <nav>
         <ul class="gnb">
-            <li class="menu_open"><a href="#none"><span class="material-symbols-rounded">dashboard</span></a></li>
+            <li class="menu_open" onclick="f_open()"><a href="javascript:;"><span class="material-symbols-rounded">dashboard</span></a></li>
             <li class="search_open"><a href="#none"><span class="material-symbols-rounded">search</span></a></li>
             <li><a href="index.html"><span class="material-symbols-sharp">other_houses</span></a></li>
             <li><a href="shopping.html"><span class="material-symbols-rounded">local_mall</span></a></li>
@@ -171,6 +171,17 @@
     <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/style.js"></script>
+    <script>
+        function f_open(){
+            $(".search_wrap").stop().hide();
+            $(".menu_wrap").stop().fadeIn();
+            $(".menu_wrap .menu > ul > li").each(function(index){
+                $(this).delay(index*400).css({"opacity":"0"}).animate({opacity:"1"});
+            });
+            $("html").css({overflowY:"hidden"});
 
+        }
+
+    </script>
 </body>
 </html>
