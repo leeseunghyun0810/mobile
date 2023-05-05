@@ -148,9 +148,8 @@ section .pageNum a span {vertical-align: middle;font-size: 42px;}
 #buy form span.active {transform: translateY(-50%) rotate(180deg);}
 
 #buy .choice {display: flex;justify-content: space-between;flex:1;gap: 10px;margin-top: 10px;}
-#buy .choice a {width: 100%;height: 50px;}
-#buy .choice a button {width: 100%;height: 100%;font-size: 15px;font-weight: bold;color: #333;border: 1px solid #ccc;background: none;cursor: pointer;}
-#buy .choice a:last-child button {border: none;color: #fff;background-color: #333;}
+#buy .choice a {width: 100%;height: 50px;font-size: 15px;font-weight: bold;color: #333;text-align: center;line-height: 50px;border: 1px solid #ccc;background: none;cursor: pointer;}
+#buy .choice a:last-child {border: none;color: #fff;background-color: #333;}
 
 /* shopping////////////////// */
 #shopping {margin-top: 20px;}
