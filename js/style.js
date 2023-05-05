@@ -1,6 +1,6 @@
 $(function(){
     //header
-    $(".menu_open").on('click',function(){
+    $(".menu_open").on('click touchstart',function(){
         $(".search_wrap").stop().hide();
         $(".menu_wrap").stop().fadeIn();
         $(".menu_wrap .menu > ul > li").each(function(index){
