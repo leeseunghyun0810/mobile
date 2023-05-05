@@ -24,31 +24,15 @@ function footer(){
 };
 
 //FAQ
-const menu = document.querySelectorAll('.question');
-menu.forEach(function(question){
-    question.addEventListener('click',function(){
-        $("#faq .answer").stop().slideUp();
-        $(this).siblings(".answer").stop().slideToggle();
-        $(this).parent("li").siblings().find(".question > span").removeClass("active");
-        $(this).find("span").stop().toggleClass("active"); 
-    })
-});
-
-// document.querySelectorAll('.question').addEventListener('click',function(){
-//     alert(this)
-//     $("#faq .answer").stop().slideUp();
-//     $(this).siblings(".answer").stop().slideToggle();
-//     $(this).parent("li").siblings().find(".question > span").removeClass("active");
-//     $(this).find("span").stop().toggleClass("active");
-// })
-
-
-
-
-
-
-
-
+// const menu = document.querySelectorAll('.question');
+// menu.forEach(function(question){
+//     question.addEventListener('click',function(){
+//         $("#faq .answer").stop().slideUp();
+//         $(this).siblings(".answer").stop().slideToggle();
+//         $(this).parent("li").siblings().find(".question > span").removeClass("active");
+//         $(this).find("span").stop().toggleClass("active"); 
+//     })
+// });
 
 $(function(){
     //header
