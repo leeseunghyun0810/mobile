@@ -17,8 +17,8 @@ body {width: 100%;min-width: 390px;max-width: 740px;height: auto;margin: 0 auto;
 #header nav {position: fixed;left: 50%;transform:translateX(-50%);bottom: 0;z-index: 1000;width: 100%;min-width:390px;max-width:740px;height: 60px;padding: 0 25px;border-radius: 20px 20px 0 0;background-color: #999;}
 #header nav .gnb {display: flex;justify-content: space-between;align-items: center;padding: 10px 0;}
 #header nav .gnb li {width: 36px;height: 36px;cursor: pointer;}
-#header nav .gnb li a {}
-#header nav .gnb li a span {font-size: 36px;color: #fff;font-variation-settings:'FILL' 1}
+#header nav .gnb li a {cursor: pointer;}
+#header nav .gnb li a span {font-size: 36px;color: #fff;font-variation-settings:'FILL' 1;cursor: pointer;}
 
 #header .menu_wrap {position: fixed;left: 50%;top: 0;transform: translateX(-50%);display:none;width: 100%;height: 100vh;max-width: 740px;font-family: 'Roboto', sans-serif;color: #fff;background-color: rgb(136,136,136);}
 #header .menu_wrap .menu {padding: 20px;}
