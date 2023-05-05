@@ -7,21 +7,21 @@ function openBtn(){
     });
     $("html").css({overflowY:"hidden"});
 };
-function searchBtn(){
-    $(".menu_wrap").stop().hide();
-    $(".search_wrap").stop().fadeIn("fast");
-    $("html").css({overflowY:"hidden"});
-};
-function closeBtn(){
-    $(".menu_wrap").stop().fadeOut();
-    $(".search_wrap").stop().fadeOut();
-    $("html").css({overflowY:"auto"});
-};
-//푸터
-function footer(){
-    $(".ft_show a span").toggleClass("active");
-    $(".ft_info .ft_business").stop().fadeToggle();
-};
+// function searchBtn(){
+//     $(".menu_wrap").stop().hide();
+//     $(".search_wrap").stop().fadeIn("fast");
+//     $("html").css({overflowY:"hidden"});
+// };
+// function closeBtn(){
+//     $(".menu_wrap").stop().fadeOut();
+//     $(".search_wrap").stop().fadeOut();
+//     $("html").css({overflowY:"auto"});
+// };
+// //푸터
+// function footer(){
+//     $(".ft_show a span").toggleClass("active");
+//     $(".ft_info .ft_business").stop().fadeToggle();
+// };
 
 //FAQ
 // const menu = document.querySelectorAll('.question');
