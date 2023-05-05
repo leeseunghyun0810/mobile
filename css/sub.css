@@ -158,7 +158,7 @@ section .pageNum a span {vertical-align: middle;font-size: 42px;}
 #shopping label > div {width: 20px;height: 20px;margin-right: 10px;background: url(../images/checkbox.png)no-repeat center / cover;}
 #shopping label input {display: none;}
 
-#shopping .product_wrap {padding: 10px 10px 0;border-radius: 10px;border: 1px solid #ccc;overflow: hidden;}
+#shopping .product_wrap {position: relative;;padding: 10px 10px 35px;border-radius: 10px;border: 1px solid #ccc;overflow: hidden;}
 #shopping .product_wrap .all_select {padding-bottom: 15px;border-bottom: 1px solid #555;}
 #shopping .product_wrap .all_select label {display: flex;}
 #shopping .product_wrap .all_select label span {font-family: 'Roboto', sans-serif;font-size: 16px;font-weight: bold;}
@@ -189,4 +189,4 @@ section .pageNum a span {vertical-align: middle;font-size: 42px;}
 #shopping .product_wrap .total_price p {display: flex;justify-content: space-between;margin-bottom: 5px;}
 #shopping .product_wrap .total_price p:nth-child(3) span {color: #f85151;}
 #shopping .product_wrap .total_price p:nth-child(4) {margin-bottom: 15px;color: #333;}
-#shopping .product_wrap .order {position: relative;left: 50%;transform: translateX(-50%);display: block;width: 120%;height: 35px;line-height: 35px;text-align: center;font-size: 16px;font-weight: bold;color: #fff;background-color: #333;}
+#shopping .product_wrap .order {position: absolute;left: 50%;bottom: 0;transform: translateX(-50%);display: block;width: 100%;height: 35px;line-height: 35px;text-align: center;font-size: 16px;font-weight: bold;color: #fff;background-color: #333;}
