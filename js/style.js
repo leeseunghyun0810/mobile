@@ -1,13 +1,57 @@
+//헤더
+function openBtn(){
+    $(".search_wrap").stop().hide();
+    $(".menu_wrap").stop().fadeIn();
+    $(".menu_wrap .menu > ul > li").each(function(index){
+        $(this).delay(index*400).css({"opacity":"0"}).animate({opacity:"1"});
+    });
+    $("html").css({overflowY:"hidden"});
+};
+function searchBtn(){
+    $(".menu_wrap").stop().hide();
+    $(".search_wrap").stop().fadeIn("fast");
+    $("html").css({overflowY:"hidden"});
+};
+function closeBtn(){
+    $(".menu_wrap").stop().fadeOut();
+    $(".search_wrap").stop().fadeOut();
+    $("html").css({overflowY:"auto"});
+};
+//푸터
+function footer(){
+    $(".ft_show a span").toggleClass("active");
+    $(".ft_info .ft_business").stop().fadeToggle();
+};
+
+//FAQ
+const menu = document.querySelectorAll('.question');
+menu.forEach(function(question){
+    question.addEventListener('click',function(){
+        $("#faq .answer").stop().slideUp();
+        $(this).siblings(".answer").stop().slideToggle();
+        $(this).parent("li").siblings().find(".question > span").removeClass("active");
+        $(this).find("span").stop().toggleClass("active"); 
+    })
+});
+
+// document.querySelectorAll('.question').addEventListener('click',function(){
+//     alert(this)
+//     $("#faq .answer").stop().slideUp();
+//     $(this).siblings(".answer").stop().slideToggle();
+//     $(this).parent("li").siblings().find(".question > span").removeClass("active");
+//     $(this).find("span").stop().toggleClass("active");
+// })
+
+
+
+
+
+
+
+
+
 $(function(){
     //header
-    function openii(){
-        $(".search_wrap").stop().hide();
-        $(".menu_wrap").stop().fadeIn();
-        $(".menu_wrap .menu > ul > li").each(function(index){
-            $(this).delay(index*400).css({"opacity":"0"}).animate({opacity:"1"});
-        });
-        $("html").css({overflowY:"hidden"});
-    }
     // $(".menu_open").on('click touchstart',function(){
     //     $(".search_wrap").stop().hide();
     //     $(".menu_wrap").stop().fadeIn();
@@ -16,28 +60,28 @@ $(function(){
     //     });
     //     $("html").css({overflowY:"hidden"});
     // });
-    $(".close").on('click',function(){
-        $(".menu_wrap").stop().fadeOut();
-        $(".search_wrap").stop().fadeOut();
-        $("html").css({overflowY:"auto"});
-    });
+    // $(".close").on('click',function(){
+    //     $(".menu_wrap").stop().fadeOut();
+    //     $(".search_wrap").stop().fadeOut();
+    //     $("html").css({overflowY:"auto"});
+    // });
 
-    $(".search_open").on('click',function(){
-        $(".menu_wrap").stop().hide();
-        $(".search_wrap").stop().fadeIn("fast");
-        $("html").css({overflowY:"hidden"});
-    });
+    // $(".search_open").on('click',function(){
+    //     $(".menu_wrap").stop().hide();
+    //     $(".search_wrap").stop().fadeIn("fast");
+    //     $("html").css({overflowY:"hidden"});
+    // });
 
-    $(".depth_wrap").on('click',function(){
-        $(this).find(".menu_depth").slideToggle();
-        $(this).find(">a>span").toggleClass("active");
-    })
+    // $(".depth_wrap").on('click',function(){
+    //     $(this).find(".menu_depth").slideToggle();
+    //     $(this).find(">a>span").toggleClass("active");
+    // })
 
     //footer
-    $(".ft_info .ft_show").on('click',function(){
-        $(this).find("span").toggleClass("active");
-        $(".ft_info .ft_business").stop().fadeToggle();
-    })
+    // $(".ft_info .ft_show").on('click',function(){
+    //     $(this).find("span").toggleClass("active");
+    //     $(".ft_info .ft_business").stop().fadeToggle();
+    // })
 
     //main
     let $img = $(".changeimg ul li");
@@ -87,12 +131,12 @@ $(function(){
     timer2=setInterval(autoText,4000); 
 
     //faq
-    $("#faq .question").on('click',function(){
-        $("#faq .answer").stop().slideUp();
-        $(this).siblings(".answer").stop().slideToggle();
-        $(this).parent("li").siblings().find(".question > span").removeClass("active");
-        $(this).find("span").stop().toggleClass("active");
-    });
+    // $("#faq .question").on('click',function(){
+    //     $("#faq .answer").stop().slideUp();
+    //     $(this).siblings(".answer").stop().slideToggle();
+    //     $(this).parent("li").siblings().find(".question > span").removeClass("active");
+    //     $(this).find("span").stop().toggleClass("active");
+    // });
 
     //diffuser
     $("#diffuser .list_title").on('click',function(){

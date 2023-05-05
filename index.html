@@ -18,15 +18,15 @@
         <h1 class="logo"><a href="index.html"><img src="images/logo.gif" alt="LOGO"></a></h1>
         <nav>
         <ul class="gnb">
-            <li class="menu_open"><a href="#none"><span class="material-symbols-rounded">dashboard</span></a></li>
-            <li class="search_open"><a href="#none"><span class="material-symbols-rounded">search</span></a></li>
+            <li class="menu_open"><a href="#none" onclick="openBtn()"><span class="material-symbols-rounded">dashboard</span></a></li>
+            <li class="search_open"><a href="#none" onclick="searchBtn()"><span class="material-symbols-rounded">search</span></a></li>
             <li><a href="index.html"><span class="material-symbols-sharp">other_houses</span></a></li>
             <li><a href="shopping.html"><span class="material-symbols-rounded">local_mall</span></a></li>
             <li><a href="login.html"><span class="material-symbols-sharp">person</span></a></li>
         </ul>
         </nav>
         <div class="menu_wrap">
-            <div class="close"><span class="material-symbols-outlined">close</span></div>
+            <div class="close" onclick="closeBtn()"><span class="material-symbols-outlined">close</span></div>
             <div class="menu">
                 <ul>
                     <li>
@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="search_wrap">
-            <div class="close"><span class="material-symbols-outlined">close</span></div>
+            <div class="close" onclick="closeBtn()"><span class="material-symbols-outlined">close</span></div>
             <form action="">
                 <input type="search">
                 <button><span class="material-symbols-rounded">search</span></button>
@@ -131,7 +131,7 @@
             <div class="swiper mySwiper">
                 <ul class="swiper-wrapper">
                     <li class="swiper-slide">
-                        <a href="#none">
+                        <a href="buy.html">
                             <div class="imgbox"><img src="images/new0.jpg" alt="New_img"></div>
                             <div class="new_info">
                                 <span class="main_name">블랙스톤</span>
@@ -142,7 +142,7 @@
                         </a>
                     </li>
                     <li class="swiper-slide">
-                        <a href="#none">
+                        <a href="buy.html">
                             <div class="imgbox"><img src="images/new1.png" alt="New_img"></div>
                             <div class="new_info">
                                 <span class="main_name">블랙스톤</span>
@@ -153,7 +153,7 @@
                         </a>
                     </li>
                     <li class="swiper-slide">
-                        <a href="#none">
+                        <a href="buy.html">
                             <div class="imgbox"><img src="images/new3.jpg" alt="New_img"></div>
                             <div class="new_info">
                                 <span class="main_name">프리미엄 아로마</span>
@@ -164,7 +164,7 @@
                         </a>
                     </li>
                     <li class="swiper-slide">
-                        <a href="#none">
+                        <a href="buy.html">
                             <div class="imgbox"><img src="images/new2.jpg" alt="New_img"></div>
                             <div class="new_info">
                                 <span class="main_name">블랙라벨</span>
@@ -332,9 +332,9 @@
             <ul>
                 <li><a href="#none">이용약관</a></li>
                 <li><a href="#none">개인정보취급방침</a></li>
-                <li class="ft_show">
+                <li class="ft_show" onclick="footer()">
                     <a href="#none">사업자정보
-                    <span class="material-symbols-rounded">expand_more</span>
+                        <span class="material-symbols-rounded">expand_more</span>
                     </a>
                 </li>
             </ul>
