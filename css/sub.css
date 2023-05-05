@@ -154,8 +154,8 @@ section .pageNum a span {vertical-align: middle;font-size: 42px;}
 
 /* shopping////////////////// */
 #shopping {margin-top: 20px;}
-#shopping label input[type="checkbox"]:checked + div {background-image: url(../images/checkbox_on.png);}
-#shopping label > div {width: 20px;height: 20px;margin-right: 10px;background: url(../images/checkbox.png)no-repeat center / cover;}
+#shopping label .indent {width: 20px;height: 20px;margin-right: 10px;background: url(../images/checkbox.png)no-repeat center / cover;}
+#shopping label input[type="checkbox"]:checked + .indent {background-image: url(../images/checkbox_on.png);}
 #shopping label input {display: none;}
 
 #shopping .product_wrap {position: relative;;padding: 10px 10px 35px;border-radius: 10px;border: 1px solid #ccc;overflow: hidden;}
