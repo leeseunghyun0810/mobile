@@ -17,7 +17,7 @@
         <h1 class="logo"><a href="index.html"><img src="images/logo.gif" alt="LOGO"></a></h1>
         <nav>
         <ul class="gnb">
-            <li class="menu_open"><a href="#none"><span class="material-symbols-rounded">dashboard</span></a></li>
+            <li class="menu_open" onclick="openBtn()"><a href="#none"><span class="material-symbols-rounded">dashboard</span></a></li>
             <li class="search_open"><a href="#none"><span class="material-symbols-rounded">search</span></a></li>
             <li><a href="index.html"><span class="material-symbols-sharp">other_houses</span></a></li>
             <li><a href="shopping.html"><span class="material-symbols-rounded">local_mall</span></a></li>
@@ -355,6 +355,10 @@
         el: ".swiper-pagination",
     },
     });
+
+    function openBtn(){
+        alert("asdf")
+    }
 </script>
 </body>
 </html>
