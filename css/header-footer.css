@@ -18,7 +18,7 @@ body {width: 100%;max-width: 740px;height: auto;margin: 0 auto;}
 #header nav .gnb {display: flex;justify-content: space-between;align-items: center;padding: 10px 0;}
 #header nav .gnb li {width: 36px;height: 36px;}
 #header nav .gnb li a {}
-#header nav .gnb li a span {font-size: 36px;color: #fff;font-variation-settings:'FILL' 1;cursor: pointer;}
+#header nav .gnb li a span {font-size: 36px;color: #fff;font-variation-settings:'FILL' 1;}
 
 #header .menu_wrap {position: fixed;left: 50%;top: 0;transform: translateX(-50%);display:none;width: 100%;height: 100vh;max-width: 740px;font-family: 'Roboto', sans-serif;color: #fff;background-color: rgb(136,136,136);}
 #header .menu_wrap .menu {padding: 20px;}
@@ -29,13 +29,6 @@ body {width: 100%;max-width: 740px;height: auto;margin: 0 auto;}
 #header .menu_wrap .menu > ul > li > a {display: inline-block;font-size: 40px;font-weight: bold;}
 #header .menu_wrap .menu > ul > li > a.active {position: relative;;color: #ffde2f;}
 #header .menu_wrap .menu > ul > li > a.active::after {content: '';position: absolute;right: -10px;top: 0;width: 10px;height: 10px;border-radius: 50%;background-color: #ffde2f;}
-
-#header .menu_wrap .menu > ul > .depth_wrap > a > span {font-size: 32px;}
-#header .menu_wrap .menu > ul > .depth_wrap > a > span.active {transform: rotate(180deg);}
-#header .menu_wrap .menu > ul > li > .menu_depth {display: none;padding: 15px 0 0 30px;}
-#header .menu_wrap .menu > ul > li > .menu_depth li {margin-bottom: 15px;list-style-type: disc;}
-#header .menu_wrap .menu > ul > li > .menu_depth li:last-child {margin-bottom: 0;}
-#header .menu_wrap .menu > ul > li > .menu_depth li a {font-size: 22px;font-weight: 500}
 
 #header .search_wrap {position: fixed;left: 50%;top: 0;transform: translateX(-50%);z-index: 200;display: none;width: 100%;height: 100vh;max-width: 740px;padding: 350px 20px;text-align: center;background-color: #fff;}
 #header .search_wrap form {display: flex;width: 100%;border-bottom: 1px solid #444;}
@@ -61,7 +54,7 @@ body {width: 100%;max-width: 740px;height: auto;margin: 0 auto;}
 #footer .ft_info ul {display: flex;justify-content: left;align-items: center;margin-bottom: 30px;}
 #footer .ft_info ul li {margin-right: 15px;}
 #footer .ft_info ul li:last-child {position: relative;;margin: 0;}
-#footer .ft_info ul li a {display: inline-block;}
+#footer .ft_info ul li a {display: inline-block;font-size: 14px;}
 #footer .ft_info ul li a span {font-size: 23px;vertical-align: middle;color: #333;}
 #footer .ft_info ul li a span.active {transform: rotate(180deg);}
 

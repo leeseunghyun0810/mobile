@@ -353,9 +353,9 @@
         centeredSlides: true,
         pagination: {
         el: ".swiper-pagination",
-        },
+    },
     });
-
+    
     $(function(){
     //header
     $(".menu_open").on('click',function(){
@@ -377,12 +377,6 @@
         $(".search_wrap").stop().fadeIn("fast");
         $("html").css({overflowY:"hidden"});
     });
-
-    $(".depth_wrap").on('click',function(){
-        $(this).find(".menu_depth").slideToggle();
-        $(this).find(">a>span").toggleClass("active");
-    })
-
     //footer
     $(".ft_info .ft_show").on('click',function(){
         $(this).find("span").toggleClass("active");
