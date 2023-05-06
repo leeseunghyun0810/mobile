@@ -71,8 +71,9 @@ section .pageNum a span {vertical-align: middle;font-size: 42px;}
 #diffuser .diffuser_wrap .diffuser_list ul .list_title p {display: inline-block;}
 #diffuser .diffuser_wrap .diffuser_list ul .list_title span {float: right;vertical-align: middle;transition: 0.3s;}
 #diffuser .diffuser_wrap .diffuser_list ul .list_title span.active {transform: rotate(180deg);}
+
 #diffuser .diffuser_wrap .diffuser_list ul .list_title ul {position: absolute;left: 0px;top: 45px;z-index: 1000;display: none;width:inherit;padding: 10px;border: 1px solid #666;border-top: none;background-color: #fff;}
-#diffuser .diffuser_wrap .diffuser_list ul .list_title ul li {margin-bottom: 5px;}
+#diffuser .diffuser_wrap .diffuser_list ul .list_title ul li {margin-bottom: 10px;}
 #diffuser .diffuser_wrap .diffuser_list ul .list_title ul li:last-child {margin-bottom: 0px;}
 #diffuser .diffuser_wrap .diffuser_list ul .list_title ul li a {}
 

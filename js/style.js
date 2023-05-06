@@ -93,7 +93,7 @@ $(function(){
         $("#diffuser .list_title p").html(text);
         $("#diffuser .diffuser_items > li").hide();
         $(`.${text2}`).show();
-    });
+    }); 
     $("#diffuser .list_style .one").on('click',function(){
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
