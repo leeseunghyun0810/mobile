@@ -1,3 +1,8 @@
+function openBtn(){
+    alert("asdf");
+}
+
+
 $(function(){
     //header
     // $(".menu_open").click(function(){
