@@ -86,7 +86,7 @@ section .pageNum a span {vertical-align: middle;font-size: 42px;}
 #diffuser .sub_title::after {right: 0;}
 
 #diffuser .diffuser_items {display: grid;grid-template-columns: repeat(2, 1fr);column-gap: 20px;row-gap: 30px;width: 100%;height: auto;margin: 0 auto;}
-#diffuser .diffuser_items li {position: relative;width: 100%;min-width: 165px;}
+#diffuser .diffuser_items li {position: relative;width: 100%;min-width: 100px;}
 #diffuser .diffuser_items li a {}
 #diffuser .diffuser_items li a .item {width: 100%;height: auto;margin: 0;}
 #diffuser .diffuser_items li a .item img {width: 100%;}
@@ -101,7 +101,7 @@ section .pageNum a span {vertical-align: middle;font-size: 42px;}
 #best .best_items li a .numbering {position: absolute;left: 0;top: 0;display: flex;justify-content: center;align-items: center;width: 20%;height: 13%;font-family: 'Roboto', sans-serif;font-size: 22px;font-weight: 500;color: #fff;background-color: #394082;}
 
 :is(#best, #new) .best_items {display: grid;grid-template-columns: repeat(2, 1fr);column-gap: 20px;row-gap: 30px;width: 100%;height: auto;margin: 0 auto;}
-:is(#best, #new) .best_items li {position: relative;width: 100%;min-width: 165px;}
+:is(#best, #new) .best_items li {position: relative;width: 100%;min-width: 100px;}
 :is(#best, #new) .best_items li a {}
 :is(#best, #new) .best_items li a .item {width: 100%;height: auto;margin: 0;}
 :is(#best, #new) .best_items li a .item img {width: 100%;}

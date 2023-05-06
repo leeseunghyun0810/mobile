@@ -348,7 +348,7 @@
     var swiper = new Swiper(".mySwiper", {
         loop:true,
         loopAdditionalSlides:1,
-        slidesPerView:1.4,
+        slidesPerView:1.5,
         spaceBetween:20,
         centeredSlides: true,
         pagination: {
@@ -356,7 +356,6 @@
     },
     });
     
-    $(function(){
     //header
     $(".menu_open").on('click',function(){
         $(".search_wrap").stop().hide();
@@ -538,7 +537,6 @@
         let selectChk = $("#shopping input[name=item]:checked").length;
         $("#shopping .totalLength").text(selectChk);
     });
-})
 
 </script>
 </body>

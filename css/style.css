@@ -56,10 +56,10 @@ section .section_link span {width: 20px;height: 20px;font-size: 20px;vertical-al
 #new .swiper_wrap .swiper .swiper-wrapper .swiper-slide a .new_info {width: 100%;padding: 15px;}
 
 #best, #all {padding: 0 20px;margin-top: 60px;}
-:is(#best, #all) .best_items {display: grid;grid-template-columns: repeat(2, 1fr);column-gap: 20px;row-gap: 30px;width: 100%;height: auto;margin: 0 auto;}
-:is(#best, #all) .best_items li {position: relative;width: 100%;min-width: 165px;}
-:is(#best, #all) .best_items li a {}
-:is(#best, #all) .best_items li a .item {width: 100%;height: auto;margin: 0;}
+:is(#best, #all) .best_items {display: grid;grid-template-columns:repeat(2, 1fr);column-gap: 20px;row-gap: 30px;width: 100%;height: auto;margin: 0 auto;}
+:is(#best, #all) .best_items li {position: relative;width: 100%;min-width: 100px;}
+:is(#best, #all) .best_items li a {display: block;}
+:is(#best, #all) .best_items li a .item {}
 :is(#best, #all) .best_items li a .item img {width: 100%;}
 :is(#best, #all) .best_items li a .numbering {position: absolute;left: 0;top: 0;display: flex;justify-content: center;align-items: center;width: 20%;height: 13%;font-family: 'Roboto', sans-serif;font-size: 22px;font-weight: 500;color: #fff;background-color: #394082;}
 :is(#best, #all) .section_link {margin: 0;padding-top: 15px;}
