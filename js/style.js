@@ -1,4 +1,4 @@
-/* $(function(){
+$(function(){
     //header
     $(".menu_open").on('click',function(){
         $(".search_wrap").stop().hide();
@@ -18,7 +18,7 @@
         $(".search_wrap").stop().fadeIn("fast");
         $("html").css({overflowY:"hidden"});
     });
-
+    
     //footer
     $(".ft_info .ft_show").on('click',function(){
         $(this).find("span").toggleClass("active");
@@ -194,4 +194,3 @@
     },
     });
 })
- */
