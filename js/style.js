@@ -181,16 +181,4 @@ $(function(){
         $("#shopping .totalLength").text(selectChk);
 
     })
-
-    // swiper
-    var swiper = new Swiper(".mySwiper", {
-        loop:true,
-        loopAdditionalSlides:1,
-        slidesPerView:1.4,
-        spaceBetween:20,
-        centeredSlides: true,
-        pagination: {
-        el: ".swiper-pagination",
-    },
-    });
 })
