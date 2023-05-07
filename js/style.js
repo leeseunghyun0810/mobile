@@ -10,18 +10,15 @@ $(function(){
     });
     $(".close").on('click',function(){
         alert("asdf");
-
         $(".menu_wrap").stop().fadeOut();
         $(".search_wrap").stop().fadeOut();
         $("html").css({overflowY:"auto"});
     });
-    $(".search_open").on('click',function(){
-        alert("asdf");
-
-        $(".menu_wrap").stop().hide();
-        $(".search_wrap").stop().fadeIn("fast");
-        $("html").css({overflowY:"hidden"});
-    });
+    // $(".search_open").on('click',function(){
+    //     $(".menu_wrap").stop().hide();
+    //     $(".search_wrap").stop().fadeIn("fast");
+    //     $("html").css({overflowY:"hidden"});
+    // });
     
     /* //footer
     $(".ft_info .ft_show").on('click',function(){
