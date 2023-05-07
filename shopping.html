@@ -356,7 +356,7 @@
         $("#shopping .total").text(allLength);
 
         if(length == 0){
-            $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");
+            $("#shopping .total_price p span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");
             $("#shopping .all_select .all_selectChk").prop("checked", false);
             $("#shopping .all_select .all_selectChk").attr("disabled", true);
         };
