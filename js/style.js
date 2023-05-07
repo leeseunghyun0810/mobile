@@ -128,6 +128,7 @@ $(function(){
     
     //장바구니
     $("#shopping .all_selectChk").on('click',function(){
+        alert("asdf");
         //전체 선택
         let allCheck = $(this).is(':checked');
         
