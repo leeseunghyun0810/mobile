@@ -21,13 +21,11 @@ $(function(){
     
     //footer
     $(".ft_info .ft_show").on('click',function(){
-        alert("asdf");
-
         $(this).find("span").toggleClass("active");
         $(".ft_info .ft_business").stop().fadeToggle();
     })
 
-    /*
+    
     //main
     let $img = $(".changeimg ul li");
     let $text = $(".changeimg ul li .des .bg");
@@ -75,6 +73,7 @@ $(function(){
     timer1=setInterval(autoImg,4000); 
     timer2=setInterval(autoText,4000); 
 
+    /*
     //faq
     $("#faq .question").on('click',function(){
         $("#faq .answer").stop().slideUp();
