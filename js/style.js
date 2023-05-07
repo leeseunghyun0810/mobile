@@ -142,8 +142,7 @@ $(function(){
         };
     });
     
-    $("#shopping .selectChk input:checkbox, #shopping .all_selectChk").on('click',function(){
-        alert('asdf');
+    /* $("#shopping .selectChk input:checkbox, #shopping .all_selectChk").on('click',function(){
         //개별 선택 시 전체 선택 해제
         let selectChk = $("#shopping input[name=item]:checked").length;
         let selectLength = $("#shopping input[name=item]").length;
@@ -166,11 +165,11 @@ $(function(){
                 sum = sum + num; //금액
             }
             $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");//정수를 다시 문자열로 변환
-        })
-    });
-    /*
+        });
+    }); */
+    
     $("#shopping .order_btn .del").on('click',function(){
-
+        alert("als");
         $(this).parents(".selectChk").detach();
 
         let sum = 0; 
@@ -186,6 +185,5 @@ $(function(){
         });
         let selectChk = $("#shopping input[name=item]:checked").length;
         $("#shopping .totalLength").text(selectChk);
-
-    }) */
+    });
 })
