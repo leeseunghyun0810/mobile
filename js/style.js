@@ -141,7 +141,8 @@ $(function(){
             $("#shopping .total").text(0);    
         };
     });
-    /* $("#shopping .selectChk input:checkbox, #shopping .all_selectChk").on('click',function(){
+    $("#shopping .selectChk input:checkbox, #shopping .all_selectChk").on('click',function(){
+        alert("asdfa");
         //개별 선택 시 전체 선택 해제
         const selectChk = $("#shopping input[name=item]:checked").length;
         const selectLength = $("#shopping input[name=item]").length;
@@ -156,7 +157,7 @@ $(function(){
 
         //체크박스 금액 더하기
         let sum = 0;
-
+        alert("123123");
         $('#shopping input[name=item]').each(function(){
             const val = $(this).val();//체크된 체크박스 값
             const num = parseInt(val);//그 값을 정수로 변환
@@ -168,7 +169,7 @@ $(function(){
                 $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");
             };
         }); 
-    }); */
+    });
 
     /* $("#shopping .order_btn .del").on('click',function(){
         //삭제 버튼
