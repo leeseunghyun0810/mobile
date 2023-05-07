@@ -73,15 +73,17 @@ $(function(){
     timer1=setInterval(autoImg,4000); 
     timer2=setInterval(autoText,4000); 
 
-    /*
+    
     //faq
     $("#faq .question").on('click',function(){
+        alert('asdf');
         $("#faq .answer").stop().slideUp();
         $(this).siblings(".answer").stop().slideToggle();
         $(this).parent("li").siblings().find(".question > span").removeClass("active");
         $(this).find("span").stop().toggleClass("active");
     });
 
+    /*
     //diffuser
     $("#diffuser .list_title").on('click',function(){
         $(this).find('span').toggleClass('active');
