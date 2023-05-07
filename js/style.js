@@ -72,13 +72,13 @@ $(function(){
     timer1=setInterval(autoImg,4000); 
     timer2=setInterval(autoText,4000);  */
 
-    //faq
+    /* //faq
     $("#faq .question").on('click',function(){
         $("#faq .answer").stop().slideUp();
         $(this).siblings(".answer").stop().slideToggle();
         $(this).parent("li").siblings().find(".question > span").removeClass("active");
         $(this).find("span").stop().toggleClass("active");
-    });
+    }); */
 
     //diffuser
     $("#diffuser .list_title").on('click',function(){
@@ -122,7 +122,7 @@ $(function(){
         $("#buy form span").toggleClass('active');
     })
 
-    //장바구니
+    /* //장바구니
     $("#shopping .all_selectChk").on('click',function(){
         //전체 선택
         let allCheck = $(this).is(':checked');
@@ -180,5 +180,5 @@ $(function(){
         let selectChk = $("#shopping input[name=item]:checked").length;
         $("#shopping .totalLength").text(selectChk);
 
-    })
+    }) */
 })
