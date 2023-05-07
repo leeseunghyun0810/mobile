@@ -116,20 +116,20 @@ $(function(){
 
     //구매 페이지 갤러리
     $("#buy .thumb img").on('click',function(){
-        alert('asdf');
         const att = $(this).attr('src');
         $("#buy #largeImg img").attr('src',att);
         $(this).parent().siblings().removeClass('active');
         $(this).parent().addClass('active');
     });
     $("#buy form select").on('click',function(){
-        alert('asdf');
         $("#buy form span").toggleClass('active');
     })
 
-    /*
+    
     //장바구니
     $("#shopping .all_selectChk").on('click',function(){
+        alert('asdf');
+
         //전체 선택
         let allCheck = $(this).is(':checked');
         
@@ -143,6 +143,7 @@ $(function(){
             $("#shopping .totalLength").text(0);    
         };
     });
+    /*
     $("#shopping .selectChk input:checkbox, #shopping .all_selectChk").on('click',function(){
         //개별 선택 시 전체 선택 해제
         let selectChk = $("#shopping input[name=item]:checked").length;
