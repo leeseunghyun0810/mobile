@@ -85,14 +85,10 @@ $(function(){
 
     //diffuser
     $("#diffuser .list_title").on('click',function(){
-        alert('asdf');
-
         $(this).find('span').toggleClass('active');
         $(this).find('ul').stop().slideToggle();       
     });
     $("#diffuser .list_title > ul > li").on('click',function(){
-        alert('asdf');
-
         const text = $(this).attr('data-alt');
         const text2 = $(this).attr('id');
 
@@ -102,8 +98,6 @@ $(function(){
         $(`.${text2}`).show();
     }); 
     $("#diffuser .list_style .one").on('click',function(){
-        alert('asdf');
-
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
         $("#diffuser .diffuser_items").css({"grid-template-columns":"repeat(1, 1fr)"});
@@ -112,8 +106,6 @@ $(function(){
         $("#diffuser .price").css({fontSize:'17px'});
     });
     $("#diffuser .list_style .grid").on('click',function(){
-        alert('asdf');
-
         $(this).siblings().removeClass('active');
         $(this).addClass('active');
         $("#diffuser .diffuser_items").css({"grid-template-columns":"repeat(2, 1fr)"});
@@ -122,18 +114,20 @@ $(function(){
         $("#diffuser .price").css({fontSize:'14px'});
     });
 
-    /*
     //구매 페이지 갤러리
     $("#buy .thumb img").on('click',function(){
+        alert('asdf');
         const att = $(this).attr('src');
         $("#buy #largeImg img").attr('src',att);
         $(this).parent().siblings().removeClass('active');
         $(this).parent().addClass('active');
     });
     $("#buy form select").on('click',function(){
+        alert('asdf');
         $("#buy form span").toggleClass('active');
     })
 
+    /*
     //장바구니
     $("#shopping .all_selectChk").on('click',function(){
         //전체 선택
