@@ -210,16 +210,5 @@
     <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/style.js"></script>
-    <script>
-        $(function(){
-            //faq
-            $("#faq .question").on('click',function(){
-                $("#faq .answer").stop().slideUp();
-                $(this).siblings(".answer").stop().slideToggle();
-                $(this).parent("li").siblings().find(".question > span").removeClass("active");
-                $(this).find("span").stop().toggleClass("active");
-            });
-        })
-    </script>
 </body>
 </html>
