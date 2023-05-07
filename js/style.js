@@ -1,7 +1,6 @@
 $(function(){
     //header
     $(".menu_open").on('click',function(){
-        alert("asdf");
         $(".search_wrap").stop().hide();
         $(".menu_wrap").stop().fadeToggle();
         $(".menu_wrap .menu > ul > li").each(function(index){
@@ -9,18 +8,22 @@ $(function(){
         });
         $("html").css({overflowY:"hidden"});
     });
-    /* $(".close").on('click',function(){
+    $(".close").on('click',function(){
+        alert("asdf");
+
         $(".menu_wrap").stop().fadeOut();
         $(".search_wrap").stop().fadeOut();
         $("html").css({overflowY:"auto"});
     });
     $(".search_open").on('click',function(){
+        alert("asdf");
+
         $(".menu_wrap").stop().hide();
         $(".search_wrap").stop().fadeIn("fast");
         $("html").css({overflowY:"hidden"});
     });
     
-    //footer
+    /* //footer
     $(".ft_info .ft_show").on('click',function(){
         $(this).find("span").toggleClass("active");
         $(".ft_info .ft_business").stop().fadeToggle();
