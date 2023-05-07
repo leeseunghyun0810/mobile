@@ -128,28 +128,25 @@ $(function(){
     
     //장바구니
     $("#shopping .all_selectChk").on('click',function(){
-        alert("asdf");
         //전체 선택
-        let allCheck = $(this).is(':checked');
+        const allCheck = $(this).is(':checked');
         
         if(allCheck){
             $("#shopping .selectChk input:checkbox").prop('checked',true);
             let checkL = $("#shopping input[name=item]:checked").length;
 
-            $("#shopping .totalLength").text(checkL);    
+            $("#shopping .total").text(checkL);    
         } else {
             $("#shopping .selectChk input:checkbox").prop('checked',false);
-            $("#shopping .totalLength").text(0);    
+            $("#shopping .total").text(0);    
         };
     });
-    
     $("#shopping .selectChk input:checkbox, #shopping .all_selectChk").on('click',function(){
-        alert("laskdjf");
         //개별 선택 시 전체 선택 해제
-        let selectChk = $("#shopping input[name=item]:checked").length;
-        let selectLength = $("#shopping input[name=item]").length;
+        const selectChk = $("#shopping input[name=item]:checked").length;
+        const selectLength = $("#shopping input[name=item]").length;
 
-        $("#shopping .totalLength").text(selectChk);
+        $("#shopping .total").text(selectChk);
         
         if(selectChk != selectLength){
             $("#shopping .all_selectChk").prop('checked',false);
@@ -157,36 +154,48 @@ $(function(){
             $("#shopping .all_selectChk").prop('checked',true);
         };
 
-        /* //체크박스 금액 더하기
-        let sum = 0; //합계 초기화
+        //체크박스 금액 더하기
+        let sum = 0;
 
         $('#shopping input[name=item]').each(function(){
-            if($(this).is(':checked') == true){//체크박스 체크됐을 때
-                let val = $(this).val();//체크된 체크박스 값
-                let num = parseInt(val);//그 값을 정수로 변환
+            const val = $(this).val();//체크된 체크박스 값
+            const num = parseInt(val);//그 값을 정수로 변환
 
+            if($(this).is(':checked') == true){//체크박스 체크됐을 때
                 sum = sum + num; //금액
                 $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");//정수를 다시 문자열로 변환
+            } else {
+                $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");
             };
-        }); */
+        }); 
     });
     
-    /* $("#shopping .order_btn .del").on('click',function(){
-        alert("als");
+    $("#shopping .order_btn .del").on('click',function(){
+        //삭제 버튼
         $(this).parents(".selectChk").detach();
 
         let sum = 0; 
 
         $('#shopping input[name=item]').each(function(){
-            if($(this).is(':checked') == true){
-                let val = $(this).val();
-                let num = parseInt(val);
+            const val = $(this).val();
+            const num = parseInt(val);
 
+            if($(this).is(':checked') == true){
                 sum = sum + num;
+                $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");//정수를 다시 문자열로 변환
+            } else if($(this).is(":checked") == false){
+                $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");
             }
-            $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");//정수를 다시 문자열로 변환
         });
-        let selectChk = $("#shopping input[name=item]:checked").length;
-        $("#shopping .totalLength").text(selectChk);
-    }); */
+
+        const select = $("#shopping input[name=item]").length;
+        const selectChk = $("#shopping input[name=item]:checked").length;
+
+        $("#shopping .total").text(selectChk);
+        if(select == 0){
+            $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");
+            $("#shopping .all_select .all_selectChk").prop("checked", false);
+            $("#shopping .all_select .all_selectChk").attr("disabled", true);
+        } 
+    });
 })
