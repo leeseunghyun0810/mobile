@@ -378,6 +378,11 @@
         $(".search_wrap").stop().fadeIn("fast");
         $("html").css({overflowY:"hidden"});
     });
+
+    $(".ft_info .ft_show").on('click',function(){
+        $(this).find("span").toggleClass("active");
+        $(".ft_info .ft_business").stop().fadeToggle();
+    })
 </script>
 </body>
 </html>
