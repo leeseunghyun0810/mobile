@@ -250,7 +250,7 @@
         };
     });
 
-    $("#shopping .selectChk input[name=item]").on('click',function(){
+    $("#shopping .selectChk input[name=item], #shopping .all_selectChk").on('click',function(){
         //개별 선택 시 전체 선택 해제
         const selectChk = $("#shopping input[name=item]:checked").length;
         const selectLength = $("#shopping input[name=item]").length;
@@ -269,10 +269,8 @@
             const num = parseInt(val);//그 값을 정수로 변환
             const chk = $(this).is(":checked");
 
-            if(chk == true){
-                sum = sum + num;
-                $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");//정수를 다시 문자열로 변환
-            }
+            alert(num);
+
              /* if($(this).is(":checked") == true){//체크박스 체크됐을 때
                 sum = sum + num; //금액
                 $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");//정수를 다시 문자열로 변환
