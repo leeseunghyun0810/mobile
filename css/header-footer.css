@@ -4,6 +4,7 @@
 
 * {box-sizing: border-box;}
 body {width: 100%;max-width: 740px;height: auto;margin: 0 auto;}
+html.active {overflow-y: hidden;}
 
 /* header////// */
 #header {position: relative;z-index: 9999;padding-top: 20px;}

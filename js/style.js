@@ -6,19 +6,20 @@ $(function(){
         $(".menu_wrap .menu > ul > li").each(function(index){
             $(this).delay(index*200).css({"opacity":"0"}).animate({opacity:"1"});
         });
-        $("html").css({overflowY:"hidden"});
+        $("html").toggleClass("active")
     });
     $(".close").on('click',function(){
-        alert("asdf");
         $(".menu_wrap").stop().fadeOut();
         $(".search_wrap").stop().fadeOut();
         $("html").css({overflowY:"auto"});
     });
-    // $(".search_open").on('click',function(){
-    //     $(".menu_wrap").stop().hide();
-    //     $(".search_wrap").stop().fadeIn("fast");
-    //     $("html").css({overflowY:"hidden"});
-    // });
+    $(".search_open").on('click',function(){
+        alert("asdf");
+
+        $(".menu_wrap").stop().hide();
+        $(".search_wrap").stop().fadeIn("fast");
+        $("html").css({overflowY:"hidden"});
+    });
     
     /* //footer
     $(".ft_info .ft_show").on('click',function(){
