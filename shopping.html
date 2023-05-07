@@ -250,7 +250,7 @@
         };
     });
 
-    $("#shopping .selectChk input:checkbox, #shopping .all_selectChk").on('click',function(){
+    $("#shopping .selectChk input[name=item]").on('click',function(){
         //개별 선택 시 전체 선택 해제
         const selectChk = $("#shopping input[name=item]:checked").length;
         const selectLength = $("#shopping input[name=item]").length;
