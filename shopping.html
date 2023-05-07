@@ -268,11 +268,11 @@
             const val = $(this).val();//체크된 체크박스 값
             const num = parseInt(val);//그 값을 정수로 변환
             const chk = $(this).is(":checked");
-
-            if(chk){
-                sum = sum + num;
-                $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");//정수를 다시 문자열로 변환
-            }
+            alert(chk);
+            // if(chk){
+            //     sum = sum + num;
+            //     $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");//정수를 다시 문자열로 변환
+            // }
              /* if($(this).is(":checked") == true){//체크박스 체크됐을 때
                 sum = sum + num; //금액
                 $("#shopping .chkPrice span").text(sum.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",") + "원");//정수를 다시 문자열로 변환
