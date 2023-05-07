@@ -14,19 +14,20 @@ $(function(){
         $("html").css({overflowY:"auto"});
     });
     $(".search_open").on('click',function(){
-        alert("asdf");
-
         $(".menu_wrap").stop().hide();
         $(".search_wrap").stop().fadeIn("fast");
         $("html").css({overflowY:"hidden"});
     });
     
-    /* //footer
+    //footer
     $(".ft_info .ft_show").on('click',function(){
+        alert("asdf");
+
         $(this).find("span").toggleClass("active");
         $(".ft_info .ft_business").stop().fadeToggle();
     })
 
+    /*
     //main
     let $img = $(".changeimg ul li");
     let $text = $(".changeimg ul li .des .bg");
