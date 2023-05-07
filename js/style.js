@@ -169,7 +169,7 @@ $(function(){
         });
     }); */
     
-    $("#shopping .order_btn .del").on('click',function(){
+    /* $("#shopping .order_btn .del").on('click',function(){
         alert("als");
         $(this).parents(".selectChk").detach();
 
@@ -186,5 +186,5 @@ $(function(){
         });
         let selectChk = $("#shopping input[name=item]:checked").length;
         $("#shopping .totalLength").text(selectChk);
-    });
+    }); */
 })
