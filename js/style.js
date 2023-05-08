@@ -123,9 +123,9 @@ $(function(){
     });
     $("#buy form select").on('click',function(){
         $("#buy form span").toggleClass('active');
-    })
+    });
 
-    //장바구니
+    //장바구니 페이지
     const chkList = $("input[name=item]");
     const length = chkList.length;
 
@@ -169,9 +169,9 @@ $(function(){
                 $("#shopping .total_price p:nth-child(3) span").text(per2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//할인예상금액
                 $("#shopping .total_price p:nth-child(4) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//주문금액
             } else {
-                $("#shopping .total_price p:nth-child(1) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//선택상품금액
-                $("#shopping .total_price p:nth-child(3) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//할인예상금액
-                $("#shopping .total_price p:nth-child(4) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//주문금액
+                $("#shopping .total_price p:nth-child(1) span").text(per.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+                $("#shopping .total_price p:nth-child(3) span").text(per2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+                $("#shopping .total_price p:nth-child(4) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
             };
         }); 
     });
@@ -207,9 +207,9 @@ $(function(){
                 $("#shopping .total_price p:nth-child(3) span").text(per2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//할인예상금액
                 $("#shopping .total_price p:nth-child(4) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//주문금액
             } else {
-                $("#shopping .total_price p:nth-child(1) span").text(per.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//선택상품금액
-                $("#shopping .total_price p:nth-child(3) span").text(per2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//할인예상금액
-                $("#shopping .total_price p:nth-child(4) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//주문금액
+                $("#shopping .total_price p:nth-child(1) span").text(per.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+                $("#shopping .total_price p:nth-child(3) span").text(per2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+                $("#shopping .total_price p:nth-child(4) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
             };
         }); 
     });
@@ -236,9 +236,9 @@ $(function(){
                 $("#shopping .total_price p:nth-child(3) span").text(per2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//할인예상금액
                 $("#shopping .total_price p:nth-child(4) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//주문금액
             } else if($(this).is(":checked") == false){
-                $("#shopping .total_price p:nth-child(1) span").text(per.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//선택상품금액
-                $("#shopping .total_price p:nth-child(3) span").text(per2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//할인예상금액
-                $("#shopping .total_price p:nth-child(4) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");//주문금액
+                $("#shopping .total_price p:nth-child(1) span").text(per.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+                $("#shopping .total_price p:nth-child(3) span").text(per2.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
+                $("#shopping .total_price p:nth-child(4) span").text(sum.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "원");
             }
         });
         const allLength = $("#shopping input[name=item]:checked").length;
