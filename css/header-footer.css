@@ -33,7 +33,7 @@ html.active {overflow-y: hidden;}
 
 #header .search_wrap {position: fixed;left: 50%;top: 0;transform: translateX(-50%);z-index: 200;display: none;width: 100%;height: 100vh;max-width: 740px;padding: 350px 20px;text-align: center;background-color: #fff;}
 #header .search_wrap form {display: flex;width: 100%;border-bottom: 1px solid #444;}
-#header .search_wrap form input {width: 100%;border: none;outline: none;background: none;font-size: 22px;}
+#header .search_wrap form input {width: 100%;border: none;outline: none;background: none;font-size: 22px;-webkit-appearance: none;-webkit-border-radius: 0;}
 #header .search_wrap form button {background: none;border: none;}
 #header .search_wrap form button span {width: 40px;height: 40px;font-size: 40px;font-weight: 500;color: #333;cursor: pointer;}
 #header .search_wrap .link_wrap {margin-top: 25px;text-align: center;}
